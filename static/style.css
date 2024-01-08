@@ -1,0 +1,69 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 40px;
+}
+
+.hello {
+  color: black;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.table-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+  background-color: #009879; /* Different style for header */
+  color: #ffffff;
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+  background-color: #ffffff; /* Uniform color for rows */
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #f3f3f3; /* Highlight color on hover */
+}
+
+nav {
+  text-align: center; /* Centrowanie linku */
+  margin-top: 20px;
+}
+
+.transition-link {
+  text-decoration: none; /* Usuwa domyślne podkreślenie */
+  font-size: 24px; /* Ustawienie rozmiaru fontu */
+  color: #ac0e0e; /* Początkowy kolor tekstu */
+  border-bottom: 2px solid transparent; /* Przezroczyste podkreślenie dla płynnego efektu */
+  padding: 5px 0; /* Odstępy, żeby podkreślenie nie było za blisko tekstu */
+  transition: color 0.3s, border-color 0.3s; /* Czas trwania i właściwości animacji */
+}
+
+.transition-link:hover, .transition-link:focus {
+  color: #f30606; /* Kolor po najechaniu kursorem */
+  border-bottom: 2px solid #ff0d00; /* Podkreślenie po najechaniu kursorem */
+}
+
+

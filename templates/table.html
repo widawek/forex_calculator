@@ -1,0 +1,31 @@
+{% extends "parent.html" %}
+
+{% block content %}
+
+    <div class="table-container">
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Waluta</th>
+                    <th>Kod</th>
+                    <th>Sprzedaż</th>
+                    <th>Kupno</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in data %}
+                <tr>
+                    <td>{{ row['Waluta'] }}</td>
+                    <td>{{ row['Kod'] }}</td>
+                    <td>{{ row['Sprzedaż'] }}</td>
+                    <td>{{ row['Kupno'] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <nav>
+        <a href="/calculator" class="transition-link">Przejdź do kalkulatora</a>
+    </nav>
+{% endblock %}
